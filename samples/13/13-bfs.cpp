@@ -9,8 +9,7 @@ void report(const vector<int>& x) {
   cout << endl;
 }
 
-//幅優先探索の正しい英語はbreadth first search
-void widthFirstSearch(queue<vector<int>>& searching, const vector<int>& numbers) {
+void breadthFirstSearch(queue<vector<int>>& searching, const vector<int>& numbers) {
   while (!searching.empty()) {
     auto x = searching.front();//先頭要素の取得
     searching.pop();           //先頭要素の削除
@@ -30,5 +29,5 @@ void widthFirstSearch(queue<vector<int>>& searching, const vector<int>& numbers)
 int main() {
   auto searching = queue<vector<int>>();
   searching.emplace();//空のvector<int>から始める
-  widthFirstSearch(searching, { 1, 2, 3, 4, 5 });
+  breadthFirstSearch(searching, { 1, 2, 3, 4, 5 });
 }
