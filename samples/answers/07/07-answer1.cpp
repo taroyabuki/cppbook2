@@ -7,7 +7,7 @@ int main() {
   string str = "Hello, World!";
 
   //[]を使う場合
-  for (size_t i = str.size() - 1; i != 0; --i) cout << str[i];
+  for (int i = str.size() - 1; i >= 0; --i) cout << str[i];
   cout << endl;
 
   //反復子を使う場合
