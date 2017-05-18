@@ -29,7 +29,7 @@ int main() {
   cout << g2(v1) << endl;//g2()はv1を変更しない
 
   g3(v1);
-  cout << v1[0] << endl; //出力値：1000（f2での変更が反映された）
+  cout << v1[0] << endl; //出力値：1000（g3での変更が反映された）
 
   auto v2(h());          //h()で構築したvectorを受け取る
   //auto v2 = h();       //OK
