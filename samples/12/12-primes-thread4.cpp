@@ -7,13 +7,14 @@
 using namespace std;
 using namespace std::chrono;
 
-mutex m;
+mutex m;//排他制御のためのオブジェクト
+vector<int> primes;//素数を格納するためのvector
 
-void threadFunc(int N, int start, vector<int>* primes) {
+void threadFunc(int N, int start) {
   for (int n = start; n <= N; n += 3) {
     if (isPrime(n)) {
       unique_lock<mutex> lock(m);
-      primes->push_back(n);
+      primes.push_back(n);
     }
   }
 }
@@ -23,13 +24,13 @@ int main() {
 
   const int N = 400000;
 
-  vector<int> primes;//素数を格納するためのvector
   primes.push_back(2);//2と
   primes.push_back(3);//3は入れておく
 
-  thread threadA(threadFunc, N, 4, &primes);
-  thread threadB(threadFunc, N, 5, &primes);
+  thread threadA(threadFunc, N, 4);
+  thread threadB(threadFunc, N, 5);
 
+  //スレッドの終了を待つ
   threadA.join();
   threadB.join();
 
