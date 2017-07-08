@@ -29,7 +29,6 @@
 *.app
 
 # Others
-*.sh
 *.bat
 *.list
 .vagrant/*
