@@ -23,7 +23,7 @@ int main() {
   cout << *r << endl;//出力値：(3,4)
 
   cout << (*q).real() << endl;//出力値3（冗長）
-  cout << (*q).real() << endl;//出力値4（冗長）
+  cout << (*q).imag() << endl;//出力値4（冗長）
 
   cout << q->real() << endl;//出力値3
   cout << q->imag() << endl;//出力値4
