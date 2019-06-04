@@ -7,7 +7,7 @@ using namespace std;
 int main() {
   double x = 0.1;
   double y = x + x + x + x + x + x + x + x + x + x;
-  cout << (x == 1.) << endl;//出力値：0（等しくない）
+  cout << (y == 1.) << endl;//出力値：0（等しくない）
 
   cout << setprecision(20);//小数点以下20桁まで表示する
   cout << y << endl;       //出力値：0.99999999999999988898
