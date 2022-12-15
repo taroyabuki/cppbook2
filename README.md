@@ -4,7 +4,7 @@
 
 [矢吹太朗『基礎からしっかり学ぶC++の教科書』（日経BP, 2017）](//www.amazon.co.jp/exec/obidos/ASIN/4822298930/inquisitor-22/)のサンプルコードです。
 
-ここにあるファイルの文字コードはUTF-8です。Visual Studioで使うときは、Shift_JIS（CP932）に変換してください。Shift_JISに変換したファイルは、http://ec.nikkeibp.co.jp/nsp/dl/09893/index.shtml からもダウンロードできます。
+ここにあるファイルの文字コードはUTF-8です。Visual Studioで使うときは、Shift_JIS（CP932）に変換してください。Shift_JISに変換したファイルは、https://bookplus.nikkei.com/atcl/catalog/17/P98930/ からもダウンロードできます。
 
 ## 補足
 
