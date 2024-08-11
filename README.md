@@ -1,5 +1,7 @@
 # 矢吹太朗『C++の教科書』（日経BP, 2017）について
 
+[国会図書館](https://ndlsearch.ndl.go.jp/books/R100000002-I027960076)
+
 ## サンプルコード
 
 [矢吹太朗『基礎からしっかり学ぶC++の教科書』（日経BP, 2017）](//www.amazon.co.jp/exec/obidos/ASIN/4822298930/inquisitor-22/)のサンプルコードです。
